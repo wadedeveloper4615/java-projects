@@ -1,0 +1,95 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.github.jengelman.gradle.plugins:shadow:5.1.0'
+    }
+}
+
+apply plugin: 'java'
+apply plugin: "maven"
+apply plugin: "maven-publish"
+apply plugin: 'jacoco'
+apply plugin: 'com.github.johnrengelman.shadow'
+
+group = 'com.wade.app'
+version = '1.0.0'
+sourceCompatibility = '15'
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    maven { url 'https://repo.spring.io/milestone' }
+    maven { url 'https://repo.spring.io/snapshot' }
+}
+
+dependencies {
+    compile 'org.projectlombok:lombok:1.18.16'
+    annotationProcessor 'org.projectlombok:lombok:1.18.16'
+
+    compile("org.slf4j:slf4j-api:1.7.25")
+
+    testCompileOnly 'org.projectlombok:lombok:1.18.16'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.16' 
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.mockito:mockito-all:1.10.19'
+    testCompile 'org.assertj:assertj-core:3.9.1'   
+    testCompile("com.wade.app:pojo-tester:1.4.0"){changing=true}
+    testCompile("org.powermock:powermock-module-junit4:1.6.4")
+    testCompile("org.powermock:powermock-api-mockito:1.6.4")
+}
+
+jar {
+  manifest {
+    attributes(
+      'Class-Path': configurations.compile.collect { it.getName() }.join(' '),
+      'Main-Class': 'com.wade.decompiler.Decompiler'
+    )
+  }
+}
+
+jacoco {
+    toolVersion = "0.8.6"
+    reportsDir = file("$buildDir/jacoco")
+}
+
+shadowJar {
+    baseName = 'Decompiler-all'
+    classifier = null
+}
+
+publishing {
+  publications {
+    shadow(MavenPublication) {
+	  from components.java
+      artifact shadowJar
+    }
+  }
+}
+
+test {
+    useJUnit()
+}
+
+
+task sourcesJar(type: Jar, dependsOn: classes) {
+    classifier = 'sources'
+    from sourceSets.main.allSource
+}
+
+task javadocJar(type: Jar, dependsOn: javadoc) {
+    classifier = 'javadoc'
+    from javadoc.destinationDir
+}
+
+artifacts {
+    archives sourcesJar
+    archives javadocJar
+}

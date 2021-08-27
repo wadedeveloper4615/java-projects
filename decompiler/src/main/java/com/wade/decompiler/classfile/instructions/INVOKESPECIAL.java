@@ -1,0 +1,42 @@
+package com.wade.decompiler.classfile.instructions;
+
+import java.io.IOException;
+
+import com.wade.decompiler.classfile.instructions.base.Instruction;
+import com.wade.decompiler.enums.InstructionOpCodes;
+import com.wade.decompiler.util.ByteSequence;
+
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.ToString;
+
+/**
+ * The Class INVOKESPECIAL.
+ */
+@Getter
+@ToString(callSuper = true)
+@EqualsAndHashCode(callSuper = false)
+public class INVOKESPECIAL extends Instruction {
+    /** The index. */
+    private Integer index;
+
+    /**
+     * Instantiates a new invokespecial.
+     */
+    public INVOKESPECIAL() {
+        super(InstructionOpCodes.INVOKESPECIAL, 5);
+        index = -1;
+    }
+
+    /**
+     * Inits the from file.
+     *
+     * @param bytes the bytes
+     * @throws IOException Signals that an I/O exception has occurred.
+     */
+    @Override
+    protected void initFromFile(ByteSequence bytes) throws IOException {
+        this.index = bytes.readUnsignedShort();
+        this.length = 3;
+    }
+}

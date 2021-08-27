@@ -1,0 +1,249 @@
+Classfile /C:/projects/Decompiler/Java/build/classes/java/main/com/wade/decompiler/test/WideInstruction.class
+  Last modified Apr 30, 2021; size 1746 bytes
+  SHA-256 checksum 609af1504374fee4cac49893648b8495b45bee9a3ec87582635721567b2c56d5
+  Compiled from "WideInstruction.java"
+class com.wade.decompiler.test.WideInstruction
+  minor version: 0
+  major version: 59
+  flags: (0x0020) ACC_SUPER
+  this_class: #80                         // com/wade/decompiler/test/WideInstruction
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 5, attributes: 2
+Constant pool:
+    #1 = Methodref          #2.#3         // java/lang/Object."<init>":()V
+    #2 = Class              #4            // java/lang/Object
+    #3 = NameAndType        #5:#6         // "<init>":()V
+    #4 = Utf8               java/lang/Object
+    #5 = Utf8               <init>
+    #6 = Utf8               ()V
+    #7 = Class              #8            // java/lang/ProcessBuilder
+    #8 = Utf8               java/lang/ProcessBuilder
+    #9 = Class              #10           // java/lang/String
+   #10 = Utf8               java/lang/String
+   #11 = String             #12           // java.home
+   #12 = Utf8               java.home
+   #13 = Methodref          #14.#15       // java/lang/System.getProperty:(Ljava/lang/String;)Ljava/lang/String;
+   #14 = Class              #16           // java/lang/System
+   #15 = NameAndType        #17:#18       // getProperty:(Ljava/lang/String;)Ljava/lang/String;
+   #16 = Utf8               java/lang/System
+   #17 = Utf8               getProperty
+   #18 = Utf8               (Ljava/lang/String;)Ljava/lang/String;
+   #19 = String             #20           // bin
+   #20 = Utf8               bin
+   #21 = String             #22           // javap
+   #22 = Utf8               javap
+   #23 = Methodref          #24.#25       // java/nio/file/Paths.get:(Ljava/lang/String;[Ljava/lang/String;)Ljava/nio/file/Path;
+   #24 = Class              #26           // java/nio/file/Paths
+   #25 = NameAndType        #27:#28       // get:(Ljava/lang/String;[Ljava/lang/String;)Ljava/nio/file/Path;
+   #26 = Utf8               java/nio/file/Paths
+   #27 = Utf8               get
+   #28 = Utf8               (Ljava/lang/String;[Ljava/lang/String;)Ljava/nio/file/Path;
+   #29 = InterfaceMethodref #30.#31       // java/nio/file/Path.toString:()Ljava/lang/String;
+   #30 = Class              #32           // java/nio/file/Path
+   #31 = NameAndType        #33:#34       // toString:()Ljava/lang/String;
+   #32 = Utf8               java/nio/file/Path
+   #33 = Utf8               toString
+   #34 = Utf8               ()Ljava/lang/String;
+   #35 = String             #36           // -cp
+   #36 = Utf8               -cp
+   #37 = String             #38           // java.class.path
+   #38 = Utf8               java.class.path
+   #39 = String             #40           // -c
+   #40 = Utf8               -c
+   #41 = Methodref          #42.#43       // java/lang/invoke/MethodHandles.lookup:()Ljava/lang/invoke/MethodHandles$Lookup;
+   #42 = Class              #44           // java/lang/invoke/MethodHandles
+   #43 = NameAndType        #45:#46       // lookup:()Ljava/lang/invoke/MethodHandles$Lookup;
+   #44 = Utf8               java/lang/invoke/MethodHandles
+   #45 = Utf8               lookup
+   #46 = Utf8               ()Ljava/lang/invoke/MethodHandles$Lookup;
+   #47 = Methodref          #48.#49       // java/lang/invoke/MethodHandles$Lookup.lookupClass:()Ljava/lang/Class;
+   #48 = Class              #50           // java/lang/invoke/MethodHandles$Lookup
+   #49 = NameAndType        #51:#52       // lookupClass:()Ljava/lang/Class;
+   #50 = Utf8               java/lang/invoke/MethodHandles$Lookup
+   #51 = Utf8               lookupClass
+   #52 = Utf8               ()Ljava/lang/Class;
+   #53 = Methodref          #54.#55       // java/lang/Class.getName:()Ljava/lang/String;
+   #54 = Class              #56           // java/lang/Class
+   #55 = NameAndType        #57:#34       // getName:()Ljava/lang/String;
+   #56 = Utf8               java/lang/Class
+   #57 = Utf8               getName
+   #58 = Methodref          #7.#59        // java/lang/ProcessBuilder."<init>":([Ljava/lang/String;)V
+   #59 = NameAndType        #5:#60        // "<init>":([Ljava/lang/String;)V
+   #60 = Utf8               ([Ljava/lang/String;)V
+   #61 = Methodref          #7.#62        // java/lang/ProcessBuilder.inheritIO:()Ljava/lang/ProcessBuilder;
+   #62 = NameAndType        #63:#64       // inheritIO:()Ljava/lang/ProcessBuilder;
+   #63 = Utf8               inheritIO
+   #64 = Utf8               ()Ljava/lang/ProcessBuilder;
+   #65 = Methodref          #7.#66        // java/lang/ProcessBuilder.start:()Ljava/lang/Process;
+   #66 = NameAndType        #67:#68       // start:()Ljava/lang/Process;
+   #67 = Utf8               start
+   #68 = Utf8               ()Ljava/lang/Process;
+   #69 = Methodref          #70.#71       // java/lang/Process.waitFor:()I
+   #70 = Class              #72           // java/lang/Process
+   #71 = NameAndType        #73:#74       // waitFor:()I
+   #72 = Utf8               java/lang/Process
+   #73 = Utf8               waitFor
+   #74 = Utf8               ()I
+   #75 = Class              #76           // java/io/IOException
+   #76 = Utf8               java/io/IOException
+   #77 = Class              #78           // java/lang/InterruptedException
+   #78 = Utf8               java/lang/InterruptedException
+   #79 = Methodref          #80.#81       // com/wade/decompiler/test/WideInstruction.decompile:()V
+   #80 = Class              #82           // com/wade/decompiler/test/WideInstruction
+   #81 = NameAndType        #83:#6        // decompile:()V
+   #82 = Utf8               com/wade/decompiler/test/WideInstruction
+   #83 = Utf8               decompile
+   #84 = Utf8               Code
+   #85 = Utf8               LineNumberTable
+   #86 = Utf8               LocalVariableTable
+   #87 = Utf8               this
+   #88 = Utf8               Lcom/wade/decompiler/test/WideInstruction;
+   #89 = Utf8               StackMapTable
+   #90 = Class              #91           // java/lang/Exception
+   #91 = Utf8               java/lang/Exception
+   #92 = Utf8               largeIncrement
+   #93 = Utf8               (I)V
+   #94 = Utf8               i
+   #95 = Utf8               I
+   #96 = Utf8               largeVarIndex
+   #97 = Utf8               k57
+   #98 = Utf8               main
+   #99 = Utf8               args
+  #100 = Utf8               [Ljava/lang/String;
+  #101 = Utf8               SourceFile
+  #102 = Utf8               WideInstruction.java
+  #103 = Utf8               InnerClasses
+  #104 = Utf8               Lookup
+{
+  private com.wade.decompiler.test.WideInstruction();
+    descriptor: ()V
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 8: 0
+        line 9: 4
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lcom/wade/decompiler/test/WideInstruction;
+
+  private static void decompile();
+    descriptor: ()V
+    flags: (0x000a) ACC_PRIVATE, ACC_STATIC
+    Code:
+      stack=10, locals=1, args_size=0
+         0: new           #7                  // class java/lang/ProcessBuilder
+         3: dup
+         4: iconst_5
+         5: anewarray     #9                  // class java/lang/String
+         8: dup
+         9: iconst_0
+        10: ldc           #11                 // String java.home
+        12: invokestatic  #13                 // Method java/lang/System.getProperty:(Ljava/lang/String;)Ljava/lang/String;
+        15: iconst_2
+        16: anewarray     #9                  // class java/lang/String
+        19: dup
+        20: iconst_0
+        21: ldc           #19                 // String bin
+        23: aastore
+        24: dup
+        25: iconst_1
+        26: ldc           #21                 // String javap
+        28: aastore
+        29: invokestatic  #23                 // Method java/nio/file/Paths.get:(Ljava/lang/String;[Ljava/lang/String;)Ljava/nio/file/Path;
+        32: invokeinterface #29,  1           // InterfaceMethod java/nio/file/Path.toString:()Ljava/lang/String;
+        37: aastore
+        38: dup
+        39: iconst_1
+        40: ldc           #35                 // String -cp
+        42: aastore
+        43: dup
+        44: iconst_2
+        45: ldc           #37                 // String java.class.path
+        47: invokestatic  #13                 // Method java/lang/System.getProperty:(Ljava/lang/String;)Ljava/lang/String;
+        50: aastore
+        51: dup
+        52: iconst_3
+        53: ldc           #39                 // String -c
+        55: aastore
+        56: dup
+        57: iconst_4
+        58: invokestatic  #41                 // Method java/lang/invoke/MethodHandles.lookup:()Ljava/lang/invoke/MethodHandles$Lookup;
+        61: invokevirtual #47                 // Method java/lang/invoke/MethodHandles$Lookup.lookupClass:()Ljava/lang/Class;
+        64: invokevirtual #53                 // Method java/lang/Class.getName:()Ljava/lang/String;
+        67: aastore
+        68: invokespecial #58                 // Method java/lang/ProcessBuilder."<init>":([Ljava/lang/String;)V
+        71: invokevirtual #61                 // Method java/lang/ProcessBuilder.inheritIO:()Ljava/lang/ProcessBuilder;
+        74: invokevirtual #65                 // Method java/lang/ProcessBuilder.start:()Ljava/lang/Process;
+        77: invokevirtual #69                 // Method java/lang/Process.waitFor:()I
+        80: pop
+        81: goto          85
+        84: astore_0
+        85: return
+      Exception table:
+         from    to  target type
+             0    81    84   Class java/io/IOException
+             0    81    84   Class java/lang/InterruptedException
+      LineNumberTable:
+        line 13: 0
+        line 15: 81
+        line 14: 84
+        line 16: 85
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+      StackMapTable: number_of_entries = 2
+        frame_type = 247 /* same_locals_1_stack_item_frame_extended */
+          offset_delta = 84
+          stack = [ class java/lang/Exception ]
+        frame_type = 0 /* same */
+
+  public static void largeIncrement(int);
+    descriptor: (I)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=0, locals=1, args_size=1
+         0: iinc_w        0, 1000
+         6: return
+      LineNumberTable:
+        line 19: 0
+        line 20: 6
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       7     0     i   I
+
+  public static int largeVarIndex();
+    descriptor: ()I
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=1, locals=257, args_size=0
+         0: bipush        42
+         2: istore_w      256
+         6: iload_w       256
+        10: ireturn
+      LineNumberTable:
+        line 25: 0
+        line 26: 6
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            6       5   256   k57   I
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=0, locals=1, args_size=1
+         0: invokestatic  #79                 // Method decompile:()V
+         3: return
+      LineNumberTable:
+        line 30: 0
+        line 31: 3
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       4     0  args   [Ljava/lang/String;
+}
+SourceFile: "WideInstruction.java"
+InnerClasses:
+  public static final #104= #48 of #42;   // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles

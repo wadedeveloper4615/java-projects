@@ -1,0 +1,630 @@
+Classfile /C:/projects/Decompiler/build/classes/java/main/com/wade/decompiler/test/Test5.class
+  Last modified Apr 9, 2021; size 3909 bytes
+  SHA-256 checksum 003c2f94b97a9016ccf249b976de0952ad4ff79674ec434164ef3f272b567650
+  Compiled from "Test5.java"
+public class com.wade.decompiler.test.Test5 implements java.io.Serializable
+  minor version: 0
+  major version: 59
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #8                          // com/wade/decompiler/test/Test5
+  super_class: #2                         // java/lang/Object
+  interfaces: 1, fields: 9, methods: 21, attributes: 3
+Constant pool:
+    #1 = Methodref          #2.#3         // java/lang/Object."<init>":()V
+    #2 = Class              #4            // java/lang/Object
+    #3 = NameAndType        #5:#6         // "<init>":()V
+    #4 = Utf8               java/lang/Object
+    #5 = Utf8               <init>
+    #6 = Utf8               ()V
+    #7 = Fieldref           #8.#9         // com/wade/decompiler/test/Test5.var1:C
+    #8 = Class              #10           // com/wade/decompiler/test/Test5
+    #9 = NameAndType        #11:#12       // var1:C
+   #10 = Utf8               com/wade/decompiler/test/Test5
+   #11 = Utf8               var1
+   #12 = Utf8               C
+   #13 = Fieldref           #8.#14        // com/wade/decompiler/test/Test5.var2:B
+   #14 = NameAndType        #15:#16       // var2:B
+   #15 = Utf8               var2
+   #16 = Utf8               B
+   #17 = Fieldref           #8.#18        // com/wade/decompiler/test/Test5.var3:S
+   #18 = NameAndType        #19:#20       // var3:S
+   #19 = Utf8               var3
+   #20 = Utf8               S
+   #21 = Fieldref           #8.#22        // com/wade/decompiler/test/Test5.var4:I
+   #22 = NameAndType        #23:#24       // var4:I
+   #23 = Utf8               var4
+   #24 = Utf8               I
+   #25 = Fieldref           #8.#26        // com/wade/decompiler/test/Test5.var5:J
+   #26 = NameAndType        #27:#28       // var5:J
+   #27 = Utf8               var5
+   #28 = Utf8               J
+   #29 = Fieldref           #8.#30        // com/wade/decompiler/test/Test5.var6:F
+   #30 = NameAndType        #31:#32       // var6:F
+   #31 = Utf8               var6
+   #32 = Utf8               F
+   #33 = Fieldref           #8.#34        // com/wade/decompiler/test/Test5.var7:D
+   #34 = NameAndType        #35:#36       // var7:D
+   #35 = Utf8               var7
+   #36 = Utf8               D
+   #37 = Fieldref           #8.#38        // com/wade/decompiler/test/Test5.var8:Ljava/lang/String;
+   #38 = NameAndType        #39:#40       // var8:Ljava/lang/String;
+   #39 = Utf8               var8
+   #40 = Utf8               Ljava/lang/String;
+   #41 = Long               -5103281989426867172l
+   #43 = String             #44           // Red
+   #44 = Utf8               Red
+   #45 = String             #46           // Green
+   #46 = Utf8               Green
+   #47 = String             #48           // Blue
+   #48 = Utf8               Blue
+   #49 = InterfaceMethodref #50.#51       // java/util/List.of:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;
+   #50 = Class              #52           // java/util/List
+   #51 = NameAndType        #53:#54       // of:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;
+   #52 = Utf8               java/util/List
+   #53 = Utf8               of
+   #54 = Utf8               (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;
+   #55 = InterfaceMethodref #50.#56       // java/util/List.stream:()Ljava/util/stream/Stream;
+   #56 = NameAndType        #57:#58       // stream:()Ljava/util/stream/Stream;
+   #57 = Utf8               stream
+   #58 = Utf8               ()Ljava/util/stream/Stream;
+   #59 = InvokeDynamic      #0:#60        // #0:test:()Ljava/util/function/Predicate;
+   #60 = NameAndType        #61:#62       // test:()Ljava/util/function/Predicate;
+   #61 = Utf8               test
+   #62 = Utf8               ()Ljava/util/function/Predicate;
+   #63 = InterfaceMethodref #64.#65       // java/util/stream/Stream.filter:(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;
+   #64 = Class              #66           // java/util/stream/Stream
+   #65 = NameAndType        #67:#68       // filter:(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;
+   #66 = Utf8               java/util/stream/Stream
+   #67 = Utf8               filter
+   #68 = Utf8               (Ljava/util/function/Predicate;)Ljava/util/stream/Stream;
+   #69 = InterfaceMethodref #64.#70       // java/util/stream/Stream.count:()J
+   #70 = NameAndType        #71:#72       // count:()J
+   #71 = Utf8               count
+   #72 = Utf8               ()J
+   #73 = Class              #74           // java/lang/Exception
+   #74 = Utf8               java/lang/Exception
+   #75 = Class              #76           // java/lang/RuntimeException
+   #76 = Utf8               java/lang/RuntimeException
+   #77 = Methodref          #75.#3        // java/lang/RuntimeException."<init>":()V
+   #78 = Methodref          #79.#80       // java/lang/String.length:()I
+   #79 = Class              #81           // java/lang/String
+   #80 = NameAndType        #82:#83       // length:()I
+   #81 = Utf8               java/lang/String
+   #82 = Utf8               length
+   #83 = Utf8               ()I
+   #84 = Class              #85           // java/io/Serializable
+   #85 = Utf8               java/io/Serializable
+   #86 = Utf8               serialVersionUID
+   #87 = Utf8               ConstantValue
+   #88 = Utf8               Code
+   #89 = Utf8               LineNumberTable
+   #90 = Utf8               LocalVariableTable
+   #91 = Utf8               this
+   #92 = Utf8               Lcom/wade/decompiler/test/Test5;
+   #93 = Utf8               (CBSIJFDLjava/lang/String;)V
+   #94 = Utf8               getSerialversionuid
+   #95 = Utf8               numberOfLongColorNames
+   #96 = Utf8               value
+   #97 = Utf8               Ljava/util/List;
+   #98 = Utf8               Ljava/util/stream/Stream;
+   #99 = Utf8               LocalVariableTypeTable
+  #100 = Utf8               Ljava/util/List<Ljava/lang/String;>;
+  #101 = Utf8               Ljava/util/stream/Stream<Ljava/lang/String;>;
+  #102 = Utf8               getVar1
+  #103 = Utf8               ()C
+  #104 = Utf8               e
+  #105 = Utf8               Ljava/lang/Exception;
+  #106 = Utf8               StackMapTable
+  #107 = Utf8               setVar1
+  #108 = Utf8               (C)V
+  #109 = Utf8               getVar2
+  #110 = Utf8               ()B
+  #111 = Utf8               setVar2
+  #112 = Utf8               (B)V
+  #113 = Utf8               getVar3
+  #114 = Utf8               ()S
+  #115 = Utf8               setVar3
+  #116 = Utf8               (S)V
+  #117 = Utf8               getVar4
+  #118 = Utf8               setVar4
+  #119 = Utf8               (I)V
+  #120 = Utf8               getVar5
+  #121 = Utf8               setVar5
+  #122 = Utf8               (J)V
+  #123 = Utf8               getVar6
+  #124 = Utf8               ()F
+  #125 = Utf8               setVar6
+  #126 = Utf8               (F)V
+  #127 = Utf8               getVar7
+  #128 = Utf8               ()D
+  #129 = Utf8               setVar7
+  #130 = Utf8               (D)V
+  #131 = Utf8               getVar8
+  #132 = Utf8               ()Ljava/lang/String;
+  #133 = Utf8               setVar8
+  #134 = Utf8               (Ljava/lang/String;)V
+  #135 = Utf8               lambda$numberOfLongColorNames$0
+  #136 = Utf8               (Ljava/lang/String;)Z
+  #137 = Utf8               c
+  #138 = Utf8               SourceFile
+  #139 = Utf8               Test5.java
+  #140 = Utf8               BootstrapMethods
+  #141 = MethodHandle       6:#142        // REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #142 = Methodref          #143.#144     // java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #143 = Class              #145          // java/lang/invoke/LambdaMetafactory
+  #144 = NameAndType        #146:#147     // metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #145 = Utf8               java/lang/invoke/LambdaMetafactory
+  #146 = Utf8               metafactory
+  #147 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #148 = MethodType         #149          //  (Ljava/lang/Object;)Z
+  #149 = Utf8               (Ljava/lang/Object;)Z
+  #150 = MethodHandle       6:#151        // REF_invokeStatic com/wade/decompiler/test/Test5.lambda$numberOfLongColorNames$0:(Ljava/lang/String;)Z
+  #151 = Methodref          #8.#152       // com/wade/decompiler/test/Test5.lambda$numberOfLongColorNames$0:(Ljava/lang/String;)Z
+  #152 = NameAndType        #135:#136     // lambda$numberOfLongColorNames$0:(Ljava/lang/String;)Z
+  #153 = MethodType         #136          //  (Ljava/lang/String;)Z
+  #154 = Utf8               InnerClasses
+  #155 = Class              #156          // java/lang/invoke/MethodHandles$Lookup
+  #156 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #157 = Class              #158          // java/lang/invoke/MethodHandles
+  #158 = Utf8               java/lang/invoke/MethodHandles
+  #159 = Utf8               Lookup
+{
+  private static final long serialVersionUID;
+    descriptor: J
+    flags: (0x001a) ACC_PRIVATE, ACC_STATIC, ACC_FINAL
+    ConstantValue: long -5103281989426867172l
+
+  private char var1;
+    descriptor: C
+    flags: (0x0002) ACC_PRIVATE
+
+  private byte var2;
+    descriptor: B
+    flags: (0x0002) ACC_PRIVATE
+
+  private short var3;
+    descriptor: S
+    flags: (0x0002) ACC_PRIVATE
+
+  private int var4;
+    descriptor: I
+    flags: (0x0002) ACC_PRIVATE
+
+  private long var5;
+    descriptor: J
+    flags: (0x0002) ACC_PRIVATE
+
+  private float var6;
+    descriptor: F
+    flags: (0x0002) ACC_PRIVATE
+
+  private double var7;
+    descriptor: D
+    flags: (0x0002) ACC_PRIVATE
+
+  private java.lang.String var8;
+    descriptor: Ljava/lang/String;
+    flags: (0x0002) ACC_PRIVATE
+
+  public com.wade.decompiler.test.Test5();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 19: 0
+        line 20: 4
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lcom/wade/decompiler/test/Test5;
+
+  public com.wade.decompiler.test.Test5(char, byte, short, int, long, float, double, java.lang.String);
+    descriptor: (CBSIJFDLjava/lang/String;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=11, args_size=9
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: iload_1
+         6: putfield      #7                  // Field var1:C
+         9: aload_0
+        10: iload_2
+        11: putfield      #13                 // Field var2:B
+        14: aload_0
+        15: iload_3
+        16: putfield      #17                 // Field var3:S
+        19: aload_0
+        20: iload         4
+        22: putfield      #21                 // Field var4:I
+        25: aload_0
+        26: lload         5
+        28: putfield      #25                 // Field var5:J
+        31: aload_0
+        32: fload         7
+        34: putfield      #29                 // Field var6:F
+        37: aload_0
+        38: dload         8
+        40: putfield      #33                 // Field var7:D
+        43: aload_0
+        44: aload         10
+        46: putfield      #37                 // Field var8:Ljava/lang/String;
+        49: return
+      LineNumberTable:
+        line 23: 0
+        line 24: 4
+        line 25: 9
+        line 26: 14
+        line 27: 19
+        line 28: 25
+        line 29: 31
+        line 30: 37
+        line 31: 43
+        line 32: 49
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      50     0  this   Lcom/wade/decompiler/test/Test5;
+            0      50     1  var1   C
+            0      50     2  var2   B
+            0      50     3  var3   S
+            0      50     4  var4   I
+            0      50     5  var5   J
+            0      50     7  var6   F
+            0      50     8  var7   D
+            0      50    10  var8   Ljava/lang/String;
+
+  public static long getSerialversionuid();
+    descriptor: ()J
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: ldc2_w        #41                 // long -5103281989426867172l
+         3: lreturn
+      LineNumberTable:
+        line 35: 0
+
+  public long numberOfLongColorNames();
+    descriptor: ()J
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=4, args_size=1
+         0: ldc           #43                 // String Red
+         2: ldc           #45                 // String Green
+         4: ldc           #47                 // String Blue
+         6: invokestatic  #49                 // InterfaceMethod java/util/List.of:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;
+         9: astore_1
+        10: aload_1
+        11: invokeinterface #55,  1           // InterfaceMethod java/util/List.stream:()Ljava/util/stream/Stream;
+        16: astore_2
+        17: aload_2
+        18: invokedynamic #59,  0             // InvokeDynamic #0:test:()Ljava/util/function/Predicate;
+        23: invokeinterface #63,  2           // InterfaceMethod java/util/stream/Stream.filter:(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;
+        28: astore_3
+        29: aload_3
+        30: invokeinterface #69,  1           // InterfaceMethod java/util/stream/Stream.count:()J
+        35: lreturn
+      LineNumberTable:
+        line 39: 0
+        line 40: 10
+        line 41: 17
+        line 42: 29
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      36     0  this   Lcom/wade/decompiler/test/Test5;
+           10      26     1 value   Ljava/util/List;
+           17      19     2 stream   Ljava/util/stream/Stream;
+           29       7     3 filter   Ljava/util/stream/Stream;
+      LocalVariableTypeTable:
+        Start  Length  Slot  Name   Signature
+           10      26     1 value   Ljava/util/List<Ljava/lang/String;>;
+           17      19     2 stream   Ljava/util/stream/Stream<Ljava/lang/String;>;
+           29       7     3 filter   Ljava/util/stream/Stream<Ljava/lang/String;>;
+
+  public char getVar1();
+    descriptor: ()C
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=2, args_size=1
+         0: aload_0
+         1: aload_0
+         2: getfield      #7                  // Field var1:C
+         5: bipush        9
+         7: idiv
+         8: i2c
+         9: putfield      #7                  // Field var1:C
+        12: goto          24
+        15: astore_1
+        16: new           #75                 // class java/lang/RuntimeException
+        19: dup
+        20: invokespecial #77                 // Method java/lang/RuntimeException."<init>":()V
+        23: athrow
+        24: aload_0
+        25: getfield      #7                  // Field var1:C
+        28: ireturn
+      Exception table:
+         from    to  target type
+             0    12    15   Class java/lang/Exception
+      LineNumberTable:
+        line 47: 0
+        line 50: 12
+        line 48: 15
+        line 49: 16
+        line 51: 24
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           16       8     1     e   Ljava/lang/Exception;
+            0      29     0  this   Lcom/wade/decompiler/test/Test5;
+      StackMapTable: number_of_entries = 2
+        frame_type = 79 /* same_locals_1_stack_item */
+          stack = [ class java/lang/Exception ]
+        frame_type = 8 /* same */
+
+  public void setVar1(char);
+    descriptor: (C)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: iload_1
+         2: putfield      #7                  // Field var1:C
+         5: return
+      LineNumberTable:
+        line 55: 0
+        line 56: 5
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       6     0  this   Lcom/wade/decompiler/test/Test5;
+            0       6     1  var1   C
+
+  public byte getVar2();
+    descriptor: ()B
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #13                 // Field var2:B
+         4: ireturn
+      LineNumberTable:
+        line 59: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lcom/wade/decompiler/test/Test5;
+
+  public void setVar2(byte);
+    descriptor: (B)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: iload_1
+         2: putfield      #13                 // Field var2:B
+         5: return
+      LineNumberTable:
+        line 63: 0
+        line 64: 5
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       6     0  this   Lcom/wade/decompiler/test/Test5;
+            0       6     1  var2   B
+
+  public short getVar3();
+    descriptor: ()S
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #17                 // Field var3:S
+         4: ireturn
+      LineNumberTable:
+        line 67: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lcom/wade/decompiler/test/Test5;
+
+  public void setVar3(short);
+    descriptor: (S)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: iload_1
+         2: putfield      #17                 // Field var3:S
+         5: return
+      LineNumberTable:
+        line 71: 0
+        line 72: 5
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       6     0  this   Lcom/wade/decompiler/test/Test5;
+            0       6     1  var3   S
+
+  public int getVar4();
+    descriptor: ()I
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #21                 // Field var4:I
+         4: ireturn
+      LineNumberTable:
+        line 75: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lcom/wade/decompiler/test/Test5;
+
+  public void setVar4(int);
+    descriptor: (I)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: iload_1
+         2: putfield      #21                 // Field var4:I
+         5: return
+      LineNumberTable:
+        line 79: 0
+        line 80: 5
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       6     0  this   Lcom/wade/decompiler/test/Test5;
+            0       6     1  var4   I
+
+  public long getVar5();
+    descriptor: ()J
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #25                 // Field var5:J
+         4: lreturn
+      LineNumberTable:
+        line 83: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lcom/wade/decompiler/test/Test5;
+
+  public void setVar5(long);
+    descriptor: (J)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=3, args_size=2
+         0: aload_0
+         1: lload_1
+         2: putfield      #25                 // Field var5:J
+         5: return
+      LineNumberTable:
+        line 87: 0
+        line 88: 5
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       6     0  this   Lcom/wade/decompiler/test/Test5;
+            0       6     1  var5   J
+
+  public float getVar6();
+    descriptor: ()F
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #29                 // Field var6:F
+         4: freturn
+      LineNumberTable:
+        line 91: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lcom/wade/decompiler/test/Test5;
+
+  public void setVar6(float);
+    descriptor: (F)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: fload_1
+         2: putfield      #29                 // Field var6:F
+         5: return
+      LineNumberTable:
+        line 95: 0
+        line 96: 5
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       6     0  this   Lcom/wade/decompiler/test/Test5;
+            0       6     1  var6   F
+
+  public double getVar7();
+    descriptor: ()D
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #33                 // Field var7:D
+         4: dreturn
+      LineNumberTable:
+        line 99: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lcom/wade/decompiler/test/Test5;
+
+  public void setVar7(double);
+    descriptor: (D)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=3, args_size=2
+         0: aload_0
+         1: dload_1
+         2: putfield      #33                 // Field var7:D
+         5: return
+      LineNumberTable:
+        line 103: 0
+        line 104: 5
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       6     0  this   Lcom/wade/decompiler/test/Test5;
+            0       6     1  var7   D
+
+  public java.lang.String getVar8();
+    descriptor: ()Ljava/lang/String;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #37                 // Field var8:Ljava/lang/String;
+         4: areturn
+      LineNumberTable:
+        line 107: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lcom/wade/decompiler/test/Test5;
+
+  public void setVar8(java.lang.String);
+    descriptor: (Ljava/lang/String;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: aload_1
+         2: putfield      #37                 // Field var8:Ljava/lang/String;
+         5: return
+      LineNumberTable:
+        line 111: 0
+        line 112: 5
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       6     0  this   Lcom/wade/decompiler/test/Test5;
+            0       6     1  var8   Ljava/lang/String;
+
+  private static boolean lambda$numberOfLongColorNames$0(java.lang.String);
+    descriptor: (Ljava/lang/String;)Z
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokevirtual #78                 // Method java/lang/String.length:()I
+         4: iconst_3
+         5: if_icmple     12
+         8: iconst_1
+         9: goto          13
+        12: iconst_0
+        13: ireturn
+      LineNumberTable:
+        line 41: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      14     0     c   Ljava/lang/String;
+      StackMapTable: number_of_entries = 2
+        frame_type = 12 /* same */
+        frame_type = 64 /* same_locals_1_stack_item */
+          stack = [ int ]
+}
+SourceFile: "Test5.java"
+BootstrapMethods:
+  0: #141 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #148 (Ljava/lang/Object;)Z
+      #150 REF_invokeStatic com/wade/decompiler/test/Test5.lambda$numberOfLongColorNames$0:(Ljava/lang/String;)Z
+      #153 (Ljava/lang/String;)Z
+InnerClasses:
+  public static final #159= #155 of #157; // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles

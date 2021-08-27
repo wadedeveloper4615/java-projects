@@ -1,0 +1,16 @@
+c/bin/Debug32/decompiler.exe
+c/bin/Debug64/decompiler.exe
+c/bin/Release32/decompiler.exe
+c/bin/Release64/decompiler.exe
+c/obj/
+c/decompiler/bin/
+c/decompiler/obj/
+Java/.gradle/
+c/Debug32/
+c/Debug64/
+c/Release32/
+c/Release64/
+.gradle/
+bin/
+build/
+.idea/
