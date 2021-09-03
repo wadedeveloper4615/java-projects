@@ -12,29 +12,28 @@ import com.wade.home.model.User;
 import com.wade.home.repository.RoleRepository;
 import com.wade.home.repository.UserRepository;
 
-
 @Service("userService")
-public class UserServiceImpl implements UserService{
+public class UserServiceImpl implements UserService {
 
-	@Autowired
-	private UserRepository userRepository;
-	@Autowired
+    @Autowired
+    private UserRepository userRepository;
+    @Autowired
     private RoleRepository roleRepository;
     @Autowired
     private BCryptPasswordEncoder bCryptPasswordEncoder;
-	
-	@Override
-	public User findUserByEmail(String email) {
-		return userRepository.findByEmail(email);
-	}
 
-	@Override
-	public void saveUser(User user) {
-		user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
+    @Override
+    public User findUserByEmail(String email) {
+        return userRepository.findByEmail(email);
+    }
+
+    @Override
+    public void saveUser(User user) {
+        user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
         user.setActive(1);
         Role userRole = roleRepository.findByRole("ADMIN");
         user.setRoles(new HashSet<Role>(Arrays.asList(userRole)));
-		userRepository.save(user);
-	}
+        userRepository.save(user);
+    }
 
 }
