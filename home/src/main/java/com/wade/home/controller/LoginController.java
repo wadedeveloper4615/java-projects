@@ -11,14 +11,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.wade.home.model.Role;
 import com.wade.home.model.User;
+import com.wade.home.service.RoleService;
 import com.wade.home.service.UserService;
 
 @Controller
 public class LoginController {
-
     @Autowired
     private UserService userService;
+    @Autowired
+    private RoleService roleService;
 
     @RequestMapping(value = { "/", "/login" }, method = RequestMethod.GET)
     public ModelAndView login() {
@@ -31,7 +34,9 @@ public class LoginController {
     public ModelAndView registration() {
         ModelAndView modelAndView = new ModelAndView();
         User user = new User();
+        user.setRole(new Role());
         modelAndView.addObject("user", user);
+        modelAndView.addObject("roles",roleService.findAll());
         modelAndView.setViewName("registration");
         return modelAndView;
     }

@@ -1,9 +1,7 @@
 package com.wade.spring.homepage.nasa.service.impl;
 
 import java.io.IOException;
-import java.util.Date;
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.util.*;
 
 import org.joda.time.DateTime;
 import org.json.simple.JSONObject;
@@ -56,9 +54,17 @@ public class NasaServiceImpl implements NasaService {
 		String url = "https://api.nasa.gov/neo/rest/v1/feed?start_date=" + today + "&end_date=" + date_7daysAfter + "&";
 
 		LinkedHashMap detail = getDetail2(url, LinkedHashMap.class);
+		LinkedHashMap links = (LinkedHashMap) detail.get("links");
+		Integer count = (Integer) detail.get("element_count");
+		LinkedHashMap nearEarthObjects = (LinkedHashMap) detail.get("near_earth_objects");
 
-		detail.values().forEach(value -> {
-		    logger.info(value.getClass().toString());
+		logger.info(count.toString());
+		nearEarthObjects.keySet().forEach(key -> {
+			logger.info(key.toString());
+			List neoList = (List) nearEarthObjects.get(key);
+			neoList.forEach(value -> {
+				LinkedHashMap listHash = (LinkedHashMap) value;
+			});
 		});
 
 		return null;
