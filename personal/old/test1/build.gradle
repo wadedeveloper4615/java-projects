@@ -1,0 +1,39 @@
+plugins {
+	id 'org.springframework.boot' version '2.6.0-SNAPSHOT'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+	id 'war'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '15'
+
+repositories {
+	mavenCentral()
+	maven { url 'https://repo.spring.io/milestone' }
+	maven { url 'https://repo.spring.io/snapshot' }
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.data:spring-data-commons'
+   	implementation 'org.springframework.boot:spring-boot-starter-security'
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation 'org.springframework.security.oauth:spring-security-oauth2:2.4.0.RELEASE'
+	implementation 'commons-io:commons-io:2.8.0'
+	implementation 'org.springframework.security.oauth.boot:spring-security-oauth2-autoconfigure:2.2.2.RELEASE'
+	implementation 'org.springframework.security:spring-security-taglibs:5.5.2'
+	implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
+	implementation 'javax.servlet:jstl'
+	testImplementation 'org.springframework.security:spring-security-test:5.5.2'
+	testImplementation 'org.springframework.boot:spring-boot-autoconfigure'
+}
+
+test {
+	useJUnitPlatform()
+}

@@ -1,9 +1,11 @@
 package com.wade.homepage.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 import com.wade.homepage.model.User;
 
-public interface UserRepository extends JpaRepository<User, Long> {
-    User findByEmail(String email);
+@Repository
+public interface UserRepository extends JpaRepository<User, Long>{
+	User findByEmail(String email);
 }

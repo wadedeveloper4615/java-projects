@@ -1,0 +1,54 @@
+plugins {
+	id 'org.springframework.boot' version '2.5.0-SNAPSHOT'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+	id 'war'
+}
+
+group = 'com.wade.spring.examples'
+version = '1.0.0-SNAPSHOT'
+description = 'Inroduction to Spring boot and Cucumber Library for BDD'
+sourceCompatibility = '15'
+
+repositories {
+	mavenCentral()
+	maven { url 'https://repo.spring.io/milestone' }
+	maven { url 'https://repo.spring.io/snapshot' }
+}
+
+dependencies {
+  implementation 'org.springframework.boot:spring-boot-starter-web'
+  developmentOnly 'org.springframework.boot:spring-boot-devtools'
+  providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
+  
+  // Cucumber
+  testCompile 'io.cucumber:cucumber-java:6.8.1'
+  testCompile 'io.cucumber:cucumber-junit:6.8.1'
+  testCompile 'io.cucumber:cucumber-spring:6.8.1'
+   
+  // Junit5
+  testImplementation('org.springframework.boot:spring-boot-starter-test') {
+    exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+  }
+}
+
+configurations {
+    cucumberRuntime {
+        extendsFrom testCompile
+    }
+}
+
+task cucumber() {
+    dependsOn assemble, testClasses
+    doLast {
+        javaexec {
+            main = "io.cucumber.core.cli.Main"
+            classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
+            args = ['--plugin', 'pretty', '--glue', 'hellocucumber', 'src/test/resources']
+        }
+    }
+}
+
+test {
+	useJUnit()
+}
