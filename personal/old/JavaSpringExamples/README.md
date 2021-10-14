@@ -1,2 +1,0 @@
-# JavaSpringExamples
-Java Spring Examples
