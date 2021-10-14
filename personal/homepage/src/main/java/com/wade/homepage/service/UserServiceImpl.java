@@ -2,6 +2,7 @@ package com.wade.homepage.service;
 
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.List;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,7 +33,6 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-
         User user = userRepository.findByEmail(username);
         if (user == null) {
             throw new UsernameNotFoundException("Invalid username or password.");
@@ -46,10 +46,12 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User save(UserRegistrationDto registrationDto) {
-        System.out.println(registrationDto.getPassword());
-        User user = new User(registrationDto.getFirstName(), registrationDto.getLastName(), registrationDto.getEmail(), passwordEncoder.encode(registrationDto.getPassword()), Arrays.asList(new Role("ROLE_USER")));
-
+        String firstName = registrationDto.getFirstName();
+        String lastName = registrationDto.getLastName();
+        String email = registrationDto.getEmail();
+        String password = passwordEncoder.encode(registrationDto.getPassword());
+        List<Role> roles = Arrays.asList(registrationDto.getRole());
+        User user = new User(firstName, lastName, email, password, roles);
         return userRepository.save(user);
     }
-
 }
