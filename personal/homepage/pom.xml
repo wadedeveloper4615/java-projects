@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.6.0-SNAPSHOT</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.wade</groupId>
 	<artifactId>homepage</artifactId>
@@ -14,6 +15,18 @@
 	<packaging>war</packaging>
 	<name>homepage</name>
 	<description>Wade Homepage</description>
+	<developers>
+		<developer>
+			<name>Christopher D. Wade</name>
+			<email>wade4615@gmail.com</email>
+			<organization>Home</organization>
+		</developer>
+	</developers>
+	<scm>
+		<url>https://github.com/wadedeveloper4615/java-projects/tree/main/personal/homepage</url>
+		<developerConnection>Christopher D. Wade</developerConnection>
+	</scm>
+
 	<properties>
 		<java.version>16</java.version>
 	</properties>
@@ -81,7 +94,7 @@
 			<name>Spring Milestones</name>
 			<url>https://repo.spring.io/milestone</url>
 			<snapshots>
-				<enabled>false</enabled>
+				<enabled>true</enabled>
 			</snapshots>
 		</repository>
 		<repository>
@@ -89,7 +102,7 @@
 			<name>Spring Snapshots</name>
 			<url>https://repo.spring.io/snapshot</url>
 			<releases>
-				<enabled>false</enabled>
+				<enabled>true</enabled>
 			</releases>
 		</repository>
 	</repositories>
@@ -99,7 +112,7 @@
 			<name>Spring Milestones</name>
 			<url>https://repo.spring.io/milestone</url>
 			<snapshots>
-				<enabled>false</enabled>
+				<enabled>true</enabled>
 			</snapshots>
 		</pluginRepository>
 		<pluginRepository>
@@ -107,7 +120,7 @@
 			<name>Spring Snapshots</name>
 			<url>https://repo.spring.io/snapshot</url>
 			<releases>
-				<enabled>false</enabled>
+				<enabled>true</enabled>
 			</releases>
 		</pluginRepository>
 	</pluginRepositories>
